@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+
+:root {
+    --theme: #70B714;
+    --text: #304A07;
+    --header-bg: #f1f2f6;
+
+    --theme-2: #304A07;
+    --red: #f9c7c7;
+    --green: #c7f9cc;
+    --theme-hvr: #77e7fb;
+    --yellow: #f9f047;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+* {
+    user-select: none !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav>a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: var(--header-bg);
+}
+
+.brand {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme);
+}
+
+/* General purpose classes */
+
+.svg-mobile {
+    display: none;
+}
+
+.text-theme {
+    color: var(--theme);
+}
+
+.text {
+    color: var(--text);
+}
+
+.fit {
+    width: fit-content;
+}
+
+.pop {
+    font-family: "Poppins", sans-serif;
+}
+
+.amatic {
+    font-family: "Amatic SC", cursive;
+}
+
+.sketch {
+    /* font-family: 'Cabin Sketch', cursive; */
+    font-family: 'DM Serif Text', serif;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.bg-green {
+    background-color: var(--green) !important;
+}
+
+.bg-red {
+    background-color: var(--red) !important;
+}
+
+.bg-text {
+    background-color: var(--text) !important;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+
+.offcanvas {
+    width: 80% !important;
+}
+
+header>nav {
+    display: flex;
+}
+
+.menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    .svg-mobile {
+        display: block !important;
+    }
+
+    .svg-lg {
+        display: none !important;
+    }
+    #translate-icon{
+        display: none ;
+    }
+}
+
+
+
+.hero {
+    padding: 3rem 0px;
+}
+
+.bg-paper {
+    background-image: url(/img/paper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 0;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+}
+
+
+textarea {
+    height: 100px !important;
+}
+
+input,
+textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+svg {
+    transform: translate(0, 1rem);
+}
+
+.svg-down {
+    transform: translate(0, -.5rem) !important;
+}
+
+
+.swiper,
+.swiper-products {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 1rem;
+}
+
+.products-box {
+    overflow-x: hidden;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.faq {
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+}
