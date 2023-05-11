@@ -22,7 +22,7 @@ body {
 }
 
 * {
-    user-select: none !important;
+    /* user-select: none !important; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -177,7 +177,7 @@ header>nav {
 }
 
 .bg-paper {
-    background-image: url(/img/paper.jpg);
+    background-image: url(/img/paper-min.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
